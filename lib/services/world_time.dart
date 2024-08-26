@@ -10,7 +10,7 @@ class WorldTime{
 
   WorldTime({this.location,this.flag,this.url}) ;
   Future<void> getTime() async {//Future <void>: return void but only after this async fn is fully complete,put because we have used await on a custom fn,tells await when this fn is complete and then it can move forward
-    //make the request
+    //make the requestt
 
     try{//to search for error
       http.Response response=await http.get(Uri.parse('https://worldtimeapi.org/api/timezone/$url'));
